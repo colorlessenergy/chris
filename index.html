@@ -3,6 +3,20 @@ layout: default
 ---
 
 <section class="main">
+  <div class="responsive-nav" id="responsive-nav">
+    <p class="title">chris</p>
+    <div class="links">
+      <ul>
+        <li>Studio</li>
+        <li>About</li>
+      </ul>
+      <ul>
+        <li>Github</li>
+        <li>Contact</li>
+      </ul>
+      <p id="close">X</p>
+    </div>
+  </div>
   {% include nav.html %}
   <div class="logo">
     <p class="logo-text">Chris</p>
@@ -12,15 +26,57 @@ layout: default
     <p class="pos">passionate web developer</p>
   </div>
 </section>
-<section>
-  {% for project in site.data.projects %}
-    <img src="{{project.image}}" alt="{{project.title}}" height="{{project.height}}">
-  {% endfor %}
+<section class="idea">
+  <div>
+    <h1>To develop for a better</h1>
+    <h1>human experience</h1>
+    <p>Developing bring ideas to life.</p>
+    <p>The magic comes from the ideas.</p>
+  </div>
 </section>
-<section>
-  <p>I am a dedicated and passionate web developer. that cares for the product</p>
+<section class="projects">
+  <div class="project1">
+    {% for project in site.data.project1 %}
+      <div>
+        <a href="{{project.href}}"><img src="{{project.image}}" alt="{{project.title}}" height="{{project.height}}"></a>
+        <p class="{{project.class}}">{{project.title}}</p>
+        <p>{{project.type}}</p>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="project2">
+    {% for project2 in site.data.projects2 %}
+    <div>
+      <a href="{{project2.href}}"><img src="{{project2.image}}" alt="{{project2.title}}" height="{{project2.height}}"></a>
+      <p class="{{project2.class}}">{{project2.title}}</p>
+      <p>{{project2.type}}</p>
+    </div>
+    {% endfor %}
+  </div>
 </section>
-<section>
+<section class="projects-responsive">
+    {% for project in site.data.project1 %}
+      <div>
+        <a href="{{project.href}}"><img src="{{project.image}}" alt="{{project.title}}" height="{{project.height}}"></a>
+        <p class="{{project.class}}">{{project.title}}</p>
+        <p>{{project.type}}</p>
+      </div>
+    {% endfor %}
+    {% for project2 in site.data.projects2 %}
+    <div>
+      <a href="{{project2.href}}"><img src="{{project2.image}}" alt="{{project2.title}}" height="{{project2.height}}"></a>
+      <p class="{{project2.class}}">{{project2.title}}</p>
+      <p>{{project2.type}}</p>
+    </div>
+    {% endfor %}
+</section>
+<section class="idea">
+  <div>
+    <p>Quality is number one. Top quality content comes</p>
+    <p>from the passion and the heart.</p>
+  </div>
+</section>
+<section class="light-bulb">
   <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="300.000000pt" height="300.000000pt" viewBox="0 0 300.000000 300.000000" preserveAspectRatio="xMidYMid meet">
           <g class="bulb" transform="translate(0.000000,300.000000) scale(0.1000,-0.1000)" fill="#fff" stroke="none">
           <path class="node" id="node1" d="M1438 2575 l3 -125 65 0 64 0 0 125 0 125 -67 0 -68 0 3 -125z"></path>
@@ -60,11 +116,13 @@ layout: default
           </g>
         </svg>
 </section>
-<section>
-  <h2>Lets work together!</h2>
-  <p>Lets make the future happen! the web is the future</p>
-  <p><a href="mailto:ChristianR@ymail.com">contact me!</a></p>
+<section class="idea">
+  <div class="contact-info">
+    <h2>Lets work together.</h2>
+    <p>Lets make the future happen! the web is the future</p>
+    <p><a href="mailto:ChristianR@ymail.com">contact me!</a></p>
+  </div>
 </section>
-<section>
+<footer>
   {% include footer.html %}
-</section>
+</footer>

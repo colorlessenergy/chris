@@ -1,17 +1,15 @@
 - title: color game
+  class: color
   image: images/color-game.jpg
   desc: 'guess the color'
-  height: '400px'
+  height: '450px'
   type: game/app
+  href: 'http://christianprado.com/guess-color-game/'
 
 - title: to do list
+  class: todolist
   image: images/to-do.jpg
   desc: 'make a todo list'
   type: design/help
   height: '250px'
-
-- title: prettify
-  image: images/prettify.jpg
-  desc: 'first project'
-  type: starting
-  height: '400px'
+  href: 'http://christianprado.com/list-maker/'

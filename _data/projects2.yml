@@ -1,0 +1,14 @@
+- title: prettify
+  class: prettify
+  image: images/prettify.jpg
+  desc: 'first project'
+  type: starting
+  height: '250px'
+  href: 'http://christianprado.com/prettify-javascript/'
+
+- title: banana
+  class: banana
+  image: images/favicon.png
+  desc: 'banana'
+  type: fruit
+  height: '450px'
