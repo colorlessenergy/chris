@@ -84,6 +84,10 @@ nav p, nav img {
   margin: 0;
 }
 
+.idea div .height-line {
+  line-height: .70px;
+}
+
 .idea div p {
   font-size: 25px;
   margin: 0;
