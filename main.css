@@ -1,0 +1,25 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  align-items: center;
+  background-color: #008a00;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+}
+
+nav p {
+  margin: 0;
+}
+
+nav p, nav img {
+  margin: 0 4%;
+}
+
+.main {
+  background-color: #008a00;
+}

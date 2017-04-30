@@ -1,0 +1,17 @@
+- title: color game
+  image: images/color-game.jpg
+  desc: 'guess the color'
+  height: '400px'
+  type: game/app
+
+- title: to do list
+  image: images/to-do.jpg
+  desc: 'make a todo list'
+  type: design/help
+  height: '250px'
+
+- title: prettify
+  image: images/prettify.jpg
+  desc: 'first project'
+  type: starting
+  height: '400px'
