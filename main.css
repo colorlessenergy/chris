@@ -1,4 +1,5 @@
 html, body {
+  font-family: 'Peddana', serif;
   margin: 0;
   padding: 0;
 }
@@ -6,7 +7,6 @@ html, body {
 nav {
   align-items: center;
   background-color: #008a00;
-  color: #fff;
   display: flex;
   justify-content: space-between;
   height: 100px;
@@ -22,4 +22,32 @@ nav p, nav img {
 
 .main {
   background-color: #008a00;
+  color: #fff;
+}
+
+.main nav p {
+  font-size: 50px;
+}
+
+.main .branding p {
+  font-size: 25px;
+  margin: 0;
+
+}
+
+.main .branding {
+  padding-bottom: 30px;
+  padding-left: 30px;
+}
+
+.main .logo .logo-text {
+  font-size: 150px;
+  margin: 0;
+}
+
+.main .logo {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 400px;
 }
