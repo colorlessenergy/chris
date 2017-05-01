@@ -140,12 +140,21 @@ nav p, nav img {
 }
 
 .main .responsive-nav {
-  background-color: #232323;
-  display: none;
-  height: 250px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
   justify-content: space-between;
-  position: absolute;
   width: 100%;
+  height: 45%;
+  transform: translateY(-100%);
+  transition: transform 0.6s ease;
+}
+
+.main .responsive-nav.toggle-nav {
+  transform: translateX(0);
 }
 
 .main .responsive-nav .title {

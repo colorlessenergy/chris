@@ -1,11 +1,8 @@
-var open = document.getElementById("open");
-var close = document.getElementById("close");
+var toggleNav = document.getElementsByClassName("toggle-nav");
 var responsiveNav = document.getElementById("responsive-nav");
 
-close.addEventListener("click", function () {
-  responsiveNav.style.display = "none";
-});
-
-open.addEventListener("click", function () {
-  responsiveNav.style.display = "flex";
-});
+for (var i = 0; i < toggleNav.length; i++) {
+  toggleNav[i].addEventListener("click", function () {
+    responsiveNav.classList.toggle("toggle-nav");
+  })
+}
